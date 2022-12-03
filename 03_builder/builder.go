@@ -40,3 +40,13 @@ func NewServer(addr string, port int, options ...Option) (*Server, error) {
 	}
 	return s, nil
 }
+
+// usage
+func example() {
+	var err error
+	var s1,s2,s3 &Server
+	s1, err = NewServer("127.0.0.1", 1024)
+	s2, err = NewServer("127.0.0.1", 1024, Protocol("tcp"))
+	s3, err = NewServer("127.0.0.1", 1024, Protocol("tcp"),
+		Timeout(60*time.Second), MaxConns(1000))
+}
