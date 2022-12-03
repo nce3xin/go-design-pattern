@@ -1,6 +1,9 @@
 package builder
 
-import "time"
+import (
+	"k8s.io/klog/v2"
+	"time"
+)
 
 type Server struct {
 	Addr     string
@@ -43,10 +46,10 @@ func NewServer(addr string, port int, options ...Option) (*Server, error) {
 
 // usage
 func example() {
-	var err error
-	var s1,s2,s3 &Server
-	s1, err = NewServer("127.0.0.1", 1024)
-	s2, err = NewServer("127.0.0.1", 1024, Protocol("tcp"))
-	s3, err = NewServer("127.0.0.1", 1024, Protocol("tcp"),
+	var s1, s2, s3 *Server
+	s1, _ = NewServer("127.0.0.1", 1024)
+	s2, _ = NewServer("127.0.0.1", 1024, Protocol("tcp"))
+	s3, _ = NewServer("127.0.0.1", 1024, Protocol("tcp"),
 		Timeout(60*time.Second), MaxConns(1000))
+	klog.Infof("s1:%v\ns2:%v\ns3:%v", s1, s2, s3)
 }
