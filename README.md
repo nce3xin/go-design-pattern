@@ -15,6 +15,16 @@ Go设计模式实现。
 
 其中，单例模式用来创建全局唯一的对象。工厂模式用来创建不同但是相关类型的对象（继承同一父类或者接口的一组子类）。由给定的参数来决定创建哪种类型的对象。建造者模式是用来创建复杂对象，可以通过设置不同的可选参数，“定制化” 创建不同的对象。原型模式针对创建成本比较大的对象，利用对已有对象进行复制的方式进行创建，以达到节省创建时间的目的。
 
+### 结构型
+
+- [代理模式](https://github.com/nce3xin/go-design-pattern/tree/main/05_proxy)
+- [桥接模式](https://github.com/nce3xin/go-design-pattern/tree/main/06_bridge)
+- [装饰器模式](https://github.com/nce3xin/go-design-pattern/tree/main/07_decorator)
+- [适配器模式](https://github.com/nce3xin/go-design-pattern/tree/main/08_adapter)
+- [门面模式](https://github.com/nce3xin/go-design-pattern/tree/main/09_facade)
+- [组合模式](https://github.com/nce3xin/go-design-pattern/tree/main/11_composite)
+- [享元模式](https://github.com/nce3xin/go-design-pattern/tree/main/10_flyweight)
+
 ## 闲言碎语
 
 ### Goland环境变量配置
@@ -29,3 +39,24 @@ GOPROXY=https://mirrors.aliyun.com/goproxy/,direct;GO111MODULE=on
 go mod init <name>
 ```
 
+### Git配置代理
+
+- 配置代理
+
+  ```shell
+  git config --global http.proxy 'socks5://127.0.0.1:1080'
+  git config --global https.proxy 'socks5://127.0.0.1:1080'
+  ```
+
+​		端口1080要根据自己的v2ray配置来设置:
+
+![](imgs/v2ray-port.png)
+
+- 取消配置代理
+
+  ```shell
+  git config --global --unset http.proxy
+  git config --global --unset https.proxy
+  ```
+
+  
