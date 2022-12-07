@@ -59,4 +59,17 @@ go mod init <name>
   git config --global --unset https.proxy
   ```
 
-  
+
+### Goland配置http proxy
+
+![](imgs/goland-http.proxy.png)
+
+### Copilot 尝鲜
+
+开通了60天的试用，paypal支付。2个月后记得取消啊~
+
+[新手指南](https://docs.github.com/en/copilot/getting-started-with-github-copilot/getting-started-with-github-copilot-in-a-jetbrains-ide)
+
+#### 开启/关闭 Copilot
+
+![](imgs/open-close-copilot.png)
