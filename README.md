@@ -1,5 +1,7 @@
 # Go设计模式
 
+[![Go Report Card](https://goreportcard.com/badge/github.com/nce3xin/go-design-pattern)](https://goreportcard.com/report/github.com/nce3xin/go-design-pattern)
+
 Go设计模式实现。
 
 ## 目录
