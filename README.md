@@ -75,3 +75,11 @@ go mod init <name>
 #### 开启/关闭 Copilot
 
 ![](imgs/open-close-copilot.png)
+
+### go report card badge生成方法
+
+点击 [go report card](https://goreportcard.com/) 进入网站，输入github项目地址，点击`Generate`按钮，即可生成report以及badge。
+
+把生成的badge地址复制到github项目的`README.md`文件中，即可在github项目中显示report。
+
+![](imgs/go-report.png)
