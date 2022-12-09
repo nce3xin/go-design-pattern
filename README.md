@@ -48,9 +48,9 @@ go mod init <name>
   git config --global https.proxy 'socks5://127.0.0.1:1080'
   ```
 
-​		端口1080要根据自己的v2ray配置来设置:
+  端口1080要根据自己的v2ray配置来设置:
 
-![](imgs/v2ray-port.png)
+  ![](imgs/v2ray-port.png)
 
 - 取消配置代理
 
