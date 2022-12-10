@@ -1,6 +1,7 @@
 # Go设计模式
 
 [![Go Report Card](https://goreportcard.com/badge/github.com/nce3xin/go-design-pattern)](https://goreportcard.com/report/github.com/nce3xin/go-design-pattern)
+![build](https://github.com/nce3xin/go-design-pattern/actions/workflows/ci.yml/badge.svg)
 
 Go设计模式实现。
 
