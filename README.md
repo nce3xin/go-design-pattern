@@ -46,6 +46,8 @@ go mod init <name>
 
 - 配置代理
 
+  **配置socks代理：**
+
   ```shell
   git config --global http.proxy 'socks5://127.0.0.1:1080'
   git config --global https.proxy 'socks5://127.0.0.1:1080'
@@ -55,6 +57,17 @@ go mod init <name>
 
   ![](imgs/v2ray-port.png)
 
+  **配置http代理**：
+
+  不知道本地`http`端口是在哪设置的，应该是和`socks`端口号有关。 把v2rayN设为全局模式，打开win10的设置中代理，可以看到`socks`端口号，我这里是1081。
+
+  ```
+  git config --global http.proxy http://127.0.0.1:1081
+  git config --global https.proxy https://127.0.0.1:1081
+  ```
+
+  socks和http代理二选一配置就行，有时候一个不管用，就切换另一个试试。
+
 - 取消配置代理
 
   ```shell
@@ -62,6 +75,11 @@ go mod init <name>
   git config --global --unset https.proxy
   ```
 
+- 查看代理配置
+
+  ```shell
+  git config -l
+  ```
 
 ### Goland配置http proxy
 
