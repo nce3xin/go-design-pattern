@@ -28,6 +28,20 @@ Go设计模式实现。
 - [组合模式](https://github.com/nce3xin/go-design-pattern/tree/main/11_composite)
 - [享元模式](https://github.com/nce3xin/go-design-pattern/tree/main/10_flyweight)
 
+### 行为型
+
+- [观察者模式](https://github.com/nce3xin/go-design-pattern/tree/main/12_observer)
+- [模板模式](https://github.com/nce3xin/go-design-pattern/tree/main/13_template)
+- [策略模式](https://github.com/nce3xin/go-design-pattern/tree/main/14_strategy)
+- [职责链模式](https://github.com/nce3xin/go-design-pattern/tree/main/15_chain)
+- [状态模式](https://github.com/nce3xin/go-design-pattern/tree/main/16_state)
+- [迭代器模式](https://github.com/nce3xin/go-design-pattern/tree/main/17_iterator)
+- [访问者模式](https://github.com/nce3xin/go-design-pattern/tree/main/18_visitor)
+- [备忘录模式](https://github.com/nce3xin/go-design-pattern/tree/main/19_memo)
+- [命令模式](https://github.com/nce3xin/go-design-pattern/tree/main/20_command)
+- [解释器模式](https://github.com/nce3xin/go-design-pattern/tree/main/21_interpreter)
+- [中介模式](https://github.com/nce3xin/go-design-pattern/tree/main/22_mediator)
+
 ## 闲言碎语
 
 ### Goland环境变量配置
