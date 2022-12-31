@@ -25,14 +25,14 @@ type BufferedInputStream struct {
 
 func (b BufferedInputStream) Read(bytes []byte) int {
 	//TODO 实现增强功能：基于缓存的读数据接口
-	b.Read(bytes)
+	b.in.Read(bytes)
 	//TODO 实现增强功能：基于缓存的读数据接口
 	return 0
 }
 
 func (b BufferedInputStream) Close() {
 	//TODO 实现增强功能：基于缓存的读数据接口
-	b.Close()
+	b.in.Close()
 	//TODO 实现增强功能：基于缓存的读数据接口
 }
 
@@ -43,14 +43,14 @@ type DataInputStream struct {
 
 func (d DataInputStream) Read(bytes []byte) int {
 	//TODO 实现增强功能：基于读取基本类型数据的接口
-	d.Read(bytes)
+	d.in.Read(bytes)
 	//TODO 实现增强功能：基于读取基本类型数据的接口
 	return 0
 }
 
 func (d DataInputStream) Close() {
 	//TODO 实现增强功能：基于读取基本类型数据的接口
-	d.Close()
+	d.in.Close()
 	//TODO 实现增强功能：基于读取基本类型数据的接口
 }
 

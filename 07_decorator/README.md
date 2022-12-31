@@ -20,10 +20,10 @@ type ADecorator struct {
 	A IA
 }
 
-func (A ADecorator) f() {
-	// 功能增强代码
-	A.f()
-	// 功能增强代码
+func (a *ADecorator) f() {
+    // 功能增强代码
+    a.A.f()
+    // 功能增强代码
 }
 ```
 
